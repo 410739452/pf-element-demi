@@ -42,7 +42,7 @@ app.use(ElementUI)
 
 ## 🦄️ Demos
 
-Vue 2 Demo: [Vue 2.x](./examples/vue2-demo/README.md)  |  Vue 3 Demo: [Vue 3.x](./examples/vue3-demo/README.md)
+Vue 2 Demo: [Vue 2.x](./example/vue2-demo/README.md)  |  Vue 3 Demo: [Vue 3.x](./example/vue3-demo/README.md)
 
 ## 💡 Inspiration
 
