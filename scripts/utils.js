@@ -26,8 +26,8 @@ function copy(name, version, vue) {
 }
 
 function switchVersion(version, vue) {
-  copy("index.cjs.js", version, vue);
-  copy("index.esm.js", version, vue);
+  copy("index.cjs", version, vue);
+  copy("index.mjs", version, vue);
   copy("index.d.ts", version, vue);
 }
 

@@ -41,13 +41,18 @@
     "postinstall": "node -e \"try{require('./scripts/postinstall.js')}catch(e){}\"",
     "release": "npx bumpp --tag --commit --push && npm publish"
   },
-  "dependencies": {
-    "vue-demi": "^0.14.7"
-  },
   "peerDependencies": {
     "element-plus": "^2.6.1",
     "element-ui": "^2.15.14",
     "vue": "^2.6.0 || >=^3.0.0-0"
+  },
+  "peerDependenciesMeta": {
+    "element-plus": {
+      "optional": true
+    },
+    "element-ui": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "element-plus": "^2.6.1",

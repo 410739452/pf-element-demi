@@ -2,23 +2,19 @@
 
 An adapter for using Element UI with Vue 2 / 3.
 
-## 🪀 Just a toy
-
-This library aim to testing the `postinstall` npm hook. After all packages get installed. the script will start to check
-the installed Vue version and redirect the exports to based on the local Vue version.
 
 ## 📦 Install
 
 ```bash
 // vue2.x + element-ui
-npm i element-demi element-ui
+npm i pf-element-demi element-ui
 # or
-yarn add element-demi element-ui
+yarn add pf-element-demi element-ui
 
 // vue3.x + element-plus
-npm i element-demi element-plus
+npm i pf-element-demi element-plus
 # or
-yarn add element-demi element-plus
+yarn add pf-element-demi element-plus
 ```
 
 ## 🎩 Usage
@@ -27,7 +23,7 @@ yarn add element-demi element-plus
 
 ```js
 import Vue from 'vue'
-import ElementUI from 'element-demi'
+import ElementUI from 'pf-element-demi'
 
 Vue.use(ElementUI)
 ```
@@ -37,7 +33,7 @@ Vue.use(ElementUI)
 ```js
 import { createApp } from 'vue'
 import App from './App.vue'
-import ElementUI from 'element-demi'
+import ElementUI from 'pf-element-demi'
 
 const app = createApp(App)
 
@@ -46,7 +42,7 @@ app.use(ElementUI)
 
 ## 🦄️ Demos
 
-Vue 2 Demo: [Vue CLI 2.x](./examples/vue2-demo/README.md)  |  Vue 3 Demo: [Vue CLI 3.x](./examples/vue3-demo/README.md)
+Vue 2 Demo: [Vue 2.x](./examples/vue2-demo/README.md)  |  Vue 3 Demo: [Vue 3.x](./examples/vue3-demo/README.md)
 
 ## 💡 Inspiration
 
@@ -54,4 +50,4 @@ This library is inspired by [VueDemi](https://github.com/vueuse/vue-demi)
 
 ## 📄 License
 
-MIT [@xiaoluoboding](https://github.com/xiaoluoboding)
+MIT
