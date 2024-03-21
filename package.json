@@ -1,15 +1,33 @@
 {
-  "name": "element-demi",
-  "version": "0.1.3",
+  "name": "pf-element-demi",
+  "version": "0.0.2",
   "description": "An adapter for using Element UI with Vue 2 / 3",
+  "engines": {
+    "node": ">=12"
+  },
+  "author": "pf <https://github.com/410739452>",
+  "repository": "https://github.com/410739452/pf-element-demi.git",
+  "license": "MIT",
+  "sideEffects": false,
   "main": "lib/index.cjs.js",
-  "typings": "lib/index.d.ts",
   "module": "lib/index.esm.js",
-  "scripts": {
-    "postinstall": "node ./scripts/postinstall.js"
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "require": "./lib/index.cjs",
+      "import": "./lib/index.mjs",
+      "browser": "./lib/index.mjs"
+    },
+    "./*": "./*"
+  },
+  "bin": {
+    "element-demi-fix": "bin/element-demi-fix.js",
+    "element-demi-switch": "bin/element-demi-switch.js"
   },
   "files": [
     "lib",
+    "bin",
     "scripts"
   ],
   "keywords": [
@@ -19,19 +37,23 @@
     "element-ui",
     "element-plus"
   ],
-  "peerDependencies": {
-    "element-plus": "^1.0.2-beta.31",
-    "element-ui": "^2.15.0",
-    "vue": "^2.6.0 || >=3.0.0-rc.1"
+  "scripts": {
+    "postinstall": "node -e \"try{require('./scripts/postinstall.js')}catch(e){}\"",
+    "release": "npx bumpp --tag --commit --push && npm publish"
   },
-  "sideEffects": false,
-  "author": "xiaoluoboding<https://github.com/xiaoluoboding>",
-  "license": "MIT",
   "dependencies": {
-    "vue-demi": "^0.6.0"
+    "vue-demi": "^0.14.7"
+  },
+  "peerDependencies": {
+    "element-plus": "^2.6.1",
+    "element-ui": "^2.15.14",
+    "vue": "^2.6.0 || >=^3.0.0-0"
   },
   "devDependencies": {
-    "element-plus": "^1.0.2-beta.31",
-    "element-ui": "^2.15.0"
+    "element-plus": "^2.6.1",
+    "element-ui": "^2.15.14"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
