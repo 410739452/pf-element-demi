@@ -1,6 +1,6 @@
 {
   "name": "pf-element-demi",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "An adapter for using Element UI with Vue 2 / 3",
   "engines": {
     "node": ">=12"
