@@ -7,6 +7,7 @@ defineProps<{
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
+    <el-button type="primary">主要按钮</el-button>
   </div>
 </template>
 

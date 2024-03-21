@@ -12,7 +12,7 @@ specifiers:
   eslint-config-prettier: ^8.3.0
   eslint-plugin-prettier: ^4.0.0
   eslint-plugin-vue: ^8.0.3
-  pf-element-demi: ^0.0.11
+  pf-element-demi: ^0.0.17
   prettier: ^2.4.1
   vue: ^2.6.14
   vue-template-compiler: ^2.6.14
@@ -20,7 +20,7 @@ specifiers:
 dependencies:
   core-js: registry.npmmirror.com/core-js/3.36.1
   element-ui: registry.npmmirror.com/element-ui/2.15.14_vue@2.7.16
-  pf-element-demi: registry.npmmirror.com/pf-element-demi/0.0.11_tu5g4v776qfaoj5otycx4aydjq
+  pf-element-demi: registry.npmmirror.com/pf-element-demi/0.0.17_tu5g4v776qfaoj5otycx4aydjq
   vue: registry.npmmirror.com/vue/2.7.16
 
 devDependencies:
@@ -6771,11 +6771,11 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  registry.npmmirror.com/pf-element-demi/0.0.11_tu5g4v776qfaoj5otycx4aydjq:
-    resolution: {integrity: sha512-6S1WuQFkfj8RZlj+w21kowzbvpfLDIGzotmD5war8CpSqxD8u65zvpPFj+L3Bci6OBK9ZmzjLYamchCyIZQQGg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pf-element-demi/-/pf-element-demi-0.0.11.tgz}
-    id: registry.npmmirror.com/pf-element-demi/0.0.11
+  registry.npmmirror.com/pf-element-demi/0.0.17_tu5g4v776qfaoj5otycx4aydjq:
+    resolution: {integrity: sha512-0uFccX3nDOMufA/YqtGMuxZTmpw3J4B0JrtSbeSnWFbtIXCvvCZ1rdCwE44PeHWK0O7S8oX8NOeb4xj7h2DadQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pf-element-demi/-/pf-element-demi-0.0.17.tgz}
+    id: registry.npmmirror.com/pf-element-demi/0.0.17
     name: pf-element-demi
-    version: 0.0.11
+    version: 0.0.17
     engines: {node: '>=12'}
     hasBin: true
     requiresBuild: true
@@ -6783,12 +6783,14 @@ packages:
       element-plus: ^2.6.1
       element-ui: ^2.15.14
       vue: ^2.6.0 || >=^3.0.0-0
+    peerDependenciesMeta:
+      element-plus:
+        optional: true
+      element-ui:
+        optional: true
     dependencies:
       element-ui: registry.npmmirror.com/element-ui/2.15.14_vue@2.7.16
       vue: registry.npmmirror.com/vue/2.7.16
-      vue-demi: registry.npmmirror.com/vue-demi/0.14.7_vue@2.7.16
-    transitivePeerDependencies:
-      - '@vue/composition-api'
     dev: false
 
   registry.npmmirror.com/picocolors/0.2.1:
@@ -8545,24 +8547,6 @@ packages:
     version: 1.1.2
     engines: {node: '>= 0.8'}
     dev: true
-
-  registry.npmmirror.com/vue-demi/0.14.7_vue@2.7.16:
-    resolution: {integrity: sha512-EOG8KXDQNwkJILkx/gPcoL/7vH+hORoBaKgGe+6W7VFMvCYJfmF2dGbvgDroVnI8LU7/kTu8mbjRZGBU1z9NTA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-demi/-/vue-demi-0.14.7.tgz}
-    id: registry.npmmirror.com/vue-demi/0.14.7
-    name: vue-demi
-    version: 0.14.7
-    engines: {node: '>=12'}
-    hasBin: true
-    requiresBuild: true
-    peerDependencies:
-      '@vue/composition-api': ^1.0.0-rc.1
-      vue: ^3.0.0-0 || ^2.6.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-    dependencies:
-      vue: registry.npmmirror.com/vue/2.7.16
-    dev: false
 
   registry.npmmirror.com/vue-eslint-parser/8.3.0_eslint@7.32.0:
     resolution: {integrity: sha512-dzHGG3+sYwSf6zFBa0Gi9ZDshD7+ad14DGOdTLjruRVgZXe2J+DcZ9iUhyR48z5g1PqRa20yt3Njna/veLJL/g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-eslint-parser/-/vue-eslint-parser-8.3.0.tgz}
